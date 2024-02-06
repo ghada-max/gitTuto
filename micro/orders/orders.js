@@ -36,7 +36,7 @@ app.get("/orderr" , (req,res) => {
     order.find()
     .then((order) => res.json(order))
 })
-app.get("/orderr/:id",(req,res) => {
+app.get("/orderrrr/:id",(req,res) => {
     order.findById(req.params.id)
     .then((order) => {
         if(order){axios.get("http://localhost:5444/customers/" + order.customerID)
