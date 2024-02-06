@@ -13,7 +13,7 @@ require("./customer")
 const customer = mongoose.model("customer")
 
 //Post
-app.post("/customers",(req,res) => {
+app.post("/customerss",(req,res) => {
 
    var newCustomer= {
     name:req.body.name,
